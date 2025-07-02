@@ -144,15 +144,15 @@ const GuestFormFormikEs: React.FC = () => {
         title: t('form.eventTitle'),
         description: t('form.eventDescription'),
         location: t('form.eventLocation'),
-        startTime: "2024-10-12T12:00:00",
-        endTime: "2024-10-12T13:00:00",
+        startTime: "2026-05-02T17:30:00",
+        endTime: "2026-05-02T18:30:00",
         contacts: {
-            ana: process.env.NEXT_PUBLIC_ANA_CONTACT,
-            adrian: process.env.NEXT_PUBLIC_ADRIAN_CONTACT
+            patri: process.env.NEXT_PUBLIC_PATRI_CONTACT,
+            albert: process.env.NEXT_PUBLIC_ALBERT_CONTACT
         },
         bankAccounts: {
-            ana: process.env.NEXT_PUBLIC_ANA_BANK_ACCOUNT,
-            adrian: process.env.NEXT_PUBLIC_ADRIAN_BANK_ACCOUNT
+            patri: process.env.NEXT_PUBLIC_PATRI_BANK_ACCOUNT,
+            albert: process.env.NEXT_PUBLIC_ALBERT_BANK_ACCOUNT
         }
     };
 
@@ -164,7 +164,7 @@ const GuestFormFormikEs: React.FC = () => {
     const end = new Date(endTime).toISOString().replace(/-|:|\.\d+/g, '').slice(0, 15) + 'Z';
 
     // Event details with contacts (bank accounts removed)
-    const detailsWithContacts = `${description}\n\n${t('form.contacts.ana')}: ${contacts.ana}\n${t('form.contacts.adrian')}: ${contacts.adrian}`;
+    const detailsWithContacts = `${description}\n\n${t('form.contacts.patri')}: ${contacts.patri}\n${t('form.contacts.albert')}: ${contacts.albert}`;
 
     // Encode newlines for Google Calendar URL
     const detailsWithContactsForUrl = encodeURIComponent(detailsWithContacts).replace(/%0A/g, '%0D%0A');
