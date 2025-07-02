@@ -1,0 +1,150 @@
+{
+    "IndexPage": {
+      "title": "Aplicación de Boda - Página Principal",
+      "description": "Welcome to the Next.js Internationalization (i18n) example! This demo showcases the power of the App Router and how to manage multilingual content seamlessly using next-intl.",
+      "sections": {
+        "church": "Monasterio de la Santa Faz",
+        "farm": "Finca Torre de Reixes",
+        "event_registration": "CONFIRMA TU ASISTENCIA",
+        "locations": "Localizaciones",
+        "locationsText": "¿Dónde ocurrirá la magia?",
+        "locationsText1": "Por ello tenemos el placer de invitarles a nuestro enlace matrimonial",
+        "locations1": "Elija el lugar perfecto que capture la esencia de su historia de amor.",
+        "grettingText": "Hay días en la vida que son especiales por sí solos. Compartirlos con las personas que quieres los convierte en inolvidables.",
+        "gallery": "Nuestra Historia en Imágenes",
+        "galleryText": "Cada foto cuenta una parte de nuestra historia, desde los momentos más simples hasta los más extraordinarios. Nos sentimos afortunados de haber compartido tantos recuerdos juntos y estamos emocionados de crear muchos más en el futuro.",
+        "subtitle": "Confirma tu asistencia",
+        "title": "ESPERAMOS VERTE ALLI",
+        "descriptionForm": "Llena el formulario a continuación para confirmar tu asistencia a la boda.",
+        "Home": "Inicio",
+        "Greeting": "Bienvenida",
+        "AboutUs": "Sobre Nosotros",
+        "Gallery": "Galería",
+        "Locations": "Localización",
+        "RSVP": "RSVP",
+        "Wedding": "Boda",
+        "Party": "Fiesta"
+      },
+      "form": {
+        "warning": "Esperamos verte en nuestra boda. Recibirás un correo electrónico con los detalles de la boda, por favor revisa el",
+        "NameInput": {
+          "label": "Nombre",
+          "placeholder": "Ingresa tu nombre"
+        },
+        "LastNameInput": {
+          "label": "Apellido",
+          "placeholder": "Ingresa tu apellido"
+        },
+        "EmailInput": {
+          "label": "Correo Electrónico",
+          "placeholder": "Ingresa tu correo electrónico"
+        },
+        "AssistanceRadioButton": {
+          "label": "¿Asistirás a la boda?",
+          "yes": "Sí",
+          "no": "No"
+        },
+        "BusServiceRadioButton": {
+          "label": "¿Utilizarás el servicio de autobús?",
+          "yes": "Sí",
+          "no": "No"
+        },
+        "GuestsSection": {
+          "title": "Acompañante",
+          "guestRadioButton": {
+            "label": "¿Traerás acompañante?",
+            "yes": "Sí",
+            "no": "No"
+          },
+          "guestsInput": {
+            "label": "Número de Invitados",
+            "placeholder": "Ingresa el número de invitados"
+          },
+          "guestsNamesInput": {
+            "label": "Nombre del Acompañante",
+            "placeholder": "Ingresa el nombre de tu acompañante"
+          },
+          "guestsChildrenRadioButton": {
+            "label": "¿Traerás niños?",
+            "yes": "Sí",
+            "no": "No"
+          },
+          "guestsChildrenInput": {
+            "label": "Número de Niños",
+            "placeholder": "Ingresa el número de niños"
+          },
+          "guestsChildrenNamesInput": {
+            "label": "Nombres de los Niños",
+            "placeholder": "Ingresa los nombres de tus niños"
+          }
+        },
+        "AllergiesSection": {
+          "title": "Alergias",
+          "allergyRadioButton": {
+            "label": "¿Tienes alguna alergia?",
+            "yes": "Sí",
+            "no": "No"
+          },
+          "allergiesInput": {
+            "label": "Proporciona una lista de Alergias",
+            "placeholder": "Ingresa tus alergias separadas por comas"
+          }
+        },
+        "CommentsSection": {
+          "title": "¿Algún Comentario?",
+          "commentsInput": {
+            "label": "Comentarios Adicionales",
+            "placeholder": "Siéntete libre de agregar cualquier comentario adicional que te gustaría que se considerara"
+          }
+        },
+        "SubmitButton": "Enviar y Confirmar Asistencia",
+        "thankYouMessage": "Gracias por su respuesta!",
+        "confirmationMessage": "Esperamos verte en nuestra boda. Recibirá un email con los detalles de la boda, por favor, revise la carpeta de SPAM.",
+        "cannotAttendMessage": "Lamentamos que no pueda venir. Recibirá un email con los detalles de la boda, por favor, revise la carpeta de SPAM, que puede ignorar.",
+        "addGoogleCalendar": "Añadir a Google Calendar",
+        "addOutlookCalendar": "Añadir a Outlook Calendar",
+        "downloadICS": "Descargar ICS",
+        "eventTitle": "Boda de Patri y Albert",
+        "eventDescription": "Boda de Patri y Albert",
+        "eventLocation": "Monasterio de la Santa Faz, Alicante",
+        "contacts": {
+          "patri": "Patri",
+          "albert": "Albert"
+        },
+        "bankAccounts": {
+          "patri": "Cuenta bancaria de Patri",
+          "albert": "Cuenta bancaria de Albert"
+        }
+      },
+      "example": {
+        "title": "Ejemplo de internacionalización",
+        "description": "Este es un ejemplo de cómo se puede gestionar contenido multilingüe en Next.js utilizando next-intl. Puedes cambiar el idioma en la barra de navegación."
+      }
+    },
+    "NotFoundPage": {
+      "title": "Page Not Found",
+      "description": "Oops! It seems like you've stumbled upon a page that doesn't exist. Don't worry, our internationalization magic is still hard at work on other parts of the app. Feel free to navigate back to explore more!"
+    },
+    "Navigation": {
+      "home": "Home",
+      "wedding": "Boda",
+      "greeting": "Saludos",
+      "aboutUs": "Sobre Nosotros",
+      "gallery": "Galeria"
+    },
+    "Footer": {
+      "copyright": "© 2025 Your App. All rights reserved."
+    },
+    "CardHero": {
+      "hero": "Acompáñanos a nuestra boda"
+    },
+    "Gretting": {
+      "Gretting": "Please confirm attendance"
+    },
+    "AboutUs": {
+      "title": "Sobre Nosotros",
+      "sectionTitle": "Sobre Nosotros",
+      "description": "Hola,\n.\n,\n.\n\n,\n.\n,\n."
+    }
+    
+  }
