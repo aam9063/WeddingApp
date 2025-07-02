@@ -9,6 +9,9 @@ import {NextIntlClientProvider} from "next-intl";
 export const metadata: Metadata = {
     title: 'Patri y Albert',
     description: 'Bienvenidos a la boda del año, a la boda de Patri y Albert',
+    icons: {
+        icon: '/aya-logo-w-namest.svg',
+    },
 };
 
 interface RootLayoutProps {
