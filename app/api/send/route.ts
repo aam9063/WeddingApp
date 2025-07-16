@@ -12,8 +12,8 @@ export async function POST(req: NextRequest, res: NextResponse) {
         try {
             const response = await resend.emails.send({
                 to: email,
-                from: 'no-reply@albertypatri.com', // Reemplaza con tu dirección de correo
-                subject: 'Boda de Albert y Patri, 2 de Mayo del 2026 - Bienvenido/Welcome! 🎉',
+                from: 'no-reply@bodapatriyalbert.com', // Reemplaza con tu dirección de correo
+                subject: 'Boda de Patri y Albert, 2 de Mayo del 2026 - Bienvenido/Welcome! 🎉',
                 react: EmailTemplate({ firstName: name, lastName: surname, email: email}),
                 text: ``,
             });
