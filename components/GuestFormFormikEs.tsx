@@ -138,7 +138,8 @@ const GuestFormFormikEs: React.FC = () => {
                     songRequest: values.songRequest || undefined,
                     comments: values.comments || undefined
                 });
-                console.log('Guest created successfully with ID:', docId);
+                //console.log('Guest created successfully with ID:', docId);
+
 
                 // Send email to the provided email address
                 await sendEmail(values);
@@ -214,9 +215,6 @@ const GuestFormFormikEs: React.FC = () => {
     // Yahoo Calendar URL
     const yahooCalendarUrl = `https://calendar.yahoo.com/?v=60&view=d&type=20&title=${encodeURIComponent(title)}&st=${start}&et=${end}&desc=${encodeURIComponent(detailsWithContacts)}&in_loc=${encodeURIComponent(location)}`;
 
-    console.log('Google Calendar URL:', googleCalendarUrl);
-    console.log('Outlook Calendar URL:', outlookCalendarUrl);
-    console.log('ICS URL:', icsUrl);
 
 
 

@@ -8,7 +8,7 @@ export async function POST(req: NextRequest, res: NextResponse) {
     if (req.method === 'POST') {
         const body = await req.json();
         const { name, surname, email } = body;
-        console.log(name, surname, email)
+        //console.log(name, surname, email)
         try {
             const response = await resend.emails.send({
                 to: email,
@@ -17,14 +17,12 @@ export async function POST(req: NextRequest, res: NextResponse) {
                 react: EmailTemplate({ firstName: name, lastName: surname, email: email}),
                 text: ``,
             });
-            console.log(res, response)
+            //console.log(res, response)
             return NextResponse.json({ message: 'Correo enviado', response });
         } catch (error) {
             console.error(error);
-            console.log(res, error)
+            //console.log(res, error)
             return NextResponse.json({ message: 'Error al enviar el correo', error });
         }
-    } else {
-        console.log(res)
     }
 }

@@ -14,7 +14,7 @@ export  const createGuest = async () => {
         comment: ""
       });
 
-    console.log("Document written with ID: ", docRef.id);
+    //console.log("Document written with ID: ", docRef.id);
 
     return docRef.id;
 }

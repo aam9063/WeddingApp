@@ -36,7 +36,7 @@
             "descriptionForm": "Fill the form below to confirm your assistance to the wedding.",
             "Home": "Home",
             "Greeting": "Greeting",
-            "AboutUs": "About Us",
+            "AboutUs": "About us",
             "Gallery": "Gallery",
             "Locations": "Locations",
             "RSVP": "RSVP",
@@ -165,7 +165,7 @@
         "gallery": "Gallery"
     },
     "Footer": {
-        "copyright": "© 2025 Your App. All rights reserved."
+        "copyright": "© 2026 My Wedding App. All rights reserved."
     },
     "CardHero": {
         "hero": "Join us at our wedding"
@@ -173,7 +173,7 @@
     "AboutUs": {
         "title": "About us",
         "sectionTitle": "About us",
-        "description": "Hello,\n.\n,\n.\n\n,\n.\n,\n."
+        "description": "It all began on a summer evening in June when we decided to meet to watch the sunset at the beach. That magical moment marked the beginning of a story that would lead us to discover love, complicity, and adventure.\n\nTogether we explored Madrid, Amsterdam, Edinburgh, Cabo de Gata, and Mallorca, each journey strengthening the bonds between us. But the greatest adventure was yet to come: our son Javier, the light of our lives and the most beautiful reason to celebrate this day.\n\nToday, surrounded by those we love most, we take the next step in our story. Thank you for joining us at this special moment."
     },
     "MapTabs": {
         "WeddingEvent": "Wedding Event",

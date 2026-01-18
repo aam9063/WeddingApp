@@ -128,10 +128,5 @@ export const galleryImages = [
         id: "24",
         url: "/images/gallery/img24.jpg",
         title: "Image 24",
-    },
-    {
-        id: "25",
-        url: "/images/gallery/img25.jpg",
-        title: "Image 25",
-    },
+    }
 ];

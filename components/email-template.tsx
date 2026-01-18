@@ -16,8 +16,7 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
         title: "Boda de Patricia y Albert, 2 de Mayo del 2026",
         description: "Boda de Patricia y Albert, 2 de Mayo del 2026",
         locationCeremonia: "Monasterio de la Santa Faz a las 17.30h, Alicante",
-        locationCeremoniaEN: "Monastery of the Holy Faz at 17:30 PM, Alicante",
-        locationBanquete: "Finca Torre de Reixes, Alicante",
+        locationBanquete: "Finca Torre de Reixes, Alicante a las 20.00h",
         startTime: "2026-05-02T17:30:00",
         endTime: "2026-05-02T18:30:00",
         contacts: {
@@ -83,7 +82,10 @@ END:VCALENDAR`;
             <div className="mb-8">
                 <h1 className="text-2xl font-bold mb-4">¡Bienvenido, {firstName} {lastName}!</h1>
                 <p className="mb-6">
-                    Te has registrado exitosamente el día de nuestra boda.
+                    Gracias por confirmar tu asistencia a nuestra boda.
+                </p>
+                <p>
+                    A continuación, te proporcionamos los detalles del enlace:
                 </p>
                 <h2 className="text-xl font-semibold mb-4">Detalles del Evento</h2>
                 <p className="mb-4">
@@ -97,38 +99,11 @@ END:VCALENDAR`;
                     Para cualquier duda puedes contactarnos a estos números de teléfono:
                 </p>
                 <p className="mb-4">
-                    <strong>Contactar a Patri:</strong> {}
+                    <strong>Contactar a Patri: {contacts.patricia}</strong> {}
                     <br />
-                    <strong>Contactar a Albert:</strong> {}
+                    <strong>Contactar a Albert: {contacts.albert}</strong> {}
                 </p>
               
-            </div>
-
-            <br></br>
-
-            {/* Sección en Inglés */}
-            <div className="mt-12">
-                <h1 className="text-2xl font-bold mb-4">Welcome, {firstName} {lastName}!</h1>
-                <p className="mb-6">
-                    You have successfully registered on our wedding day.
-                </p>
-                <h2 className="text-xl font-semibold mb-4">Event Details</h2>
-                <p className="mb-4">
-                    <strong>Patricia & Albert Wedding, 02th May 2026</strong>
-                    <br />
-                    <strong>Ceremony Location:</strong> {event.locationCeremoniaEN}
-                    <br />
-                    <strong>Reception Location:</strong> {event.locationBanquete}
-                </p>
-                <p className="mb-4">
-                    For any questions, you can contact us at these phone numbers:
-                </p>
-                <p className="mb-4">
-                    <strong>Contact Patricia: {contacts.patricia}</strong> {}
-                    <br />
-                    <strong>Contact Albert: {contacts.albert}</strong> {}
-                </p>
-                
             </div>
         </div>
     );
