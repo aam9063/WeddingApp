@@ -125,13 +125,13 @@ export const galleryImages = [
         title: "Image 21",
     },
     {
-        id: "22",
-        url: "/images/gallery/img22.jpg",
-        title: "Image 22",
+        id: "24",
+        url: "/images/gallery/img24.jpg",
+        title: "Image 24",
     },
     {
-        id: "23",
-        url: "/images/gallery/img23.jpg",
-        title: "Image 23",
+        id: "25",
+        url: "/images/gallery/img25.jpg",
+        title: "Image 25",
     },
 ];
