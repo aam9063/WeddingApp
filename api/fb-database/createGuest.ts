@@ -16,7 +16,8 @@ interface Guest {
     bus?: boolean;
     allergies?: boolean;
     allergyDetails?: string;
-    menuChoice?: string; // 'meat' o 'fish'
+    menuChoice?: string;
+    songRequest?: string; // ⬅️ NUEVO
     comments?: string;
     createdAt?: string;
 }

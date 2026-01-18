@@ -2,6 +2,20 @@
   "IndexPage": {
     "title": "Aplicación de Boda - Página Principal",
     "description": "Welcome to the Next.js Internationalization (i18n) example! This demo showcases the power of the App Router and how to manage multilingual content seamlessly using next-intl.",
+    "events": {
+      "wedding": {
+        "title": "Ceremonia Religiosa",
+        "time": "17:30h - 2 de Mayo de 2026",
+        "location": "Monasterio de la Santa Faz",
+        "address": "Calle Santa Faz, s/n, 03559 Alicante"
+      },
+      "party": {
+        "title": "Banquete y Celebración",
+        "time": "20:00h - 2 de Mayo de 2026",
+        "location": "Finca Torre de Reixes",
+        "address": "Carretera de Xixona, Alicante"
+      }
+    },
     "sections": {
       "church": "Monasterio de la Santa Faz",
       "farm": "Finca Torre de Reixes",
@@ -23,7 +37,13 @@
       "Locations": "Localización",
       "RSVP": "RSVP",
       "Wedding": "Boda",
-      "Party": "Fiesta"
+      "Party": "Fiesta",
+      "gifts": {
+        "message": "Vuestra presencia es el mejor de los regalos, pero si aún así nos queréis ayudar:",
+        "accountLabel": "Número de cuenta:",
+        "accountName": "Patricia Plaza y Albert Alarcón",
+        "thankYou": "¡Muchísimas gracias! 💕"
+      }
     },
     "form": {
       "warning": "Esperamos verte en nuestra boda. Recibirás un correo electrónico con los detalles de la boda, por favor revisa el",
@@ -103,6 +123,13 @@
         "commentsInput": {
           "label": "Comentarios Adicionales",
           "placeholder": "Siéntete libre de agregar cualquier comentario adicional que te gustaría que se considerara"
+        }
+      },
+      "SongSection": {
+        "title": "Petición Musical",
+        "songInput": {
+          "label": "¿Hay alguna canción especial que te gustaría escuchar?",
+          "placeholder": "Título de la canción y artista (opcional)"
         }
       },
       "SubmitButton": "Enviar y Confirmar Asistencia",

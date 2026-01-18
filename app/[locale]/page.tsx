@@ -1,9 +1,10 @@
 import { marcellus } from "@/styles/fonts";
 import Image from "next/image";
 import Gretting from '@/components/Gretting';
-import img5 from '@/public/images/img5.jpg';
-import img9 from '@/public/images/img9.jpg';
-import img10 from '@/public/images/img10.jpg';
+import img20 from '@/public/images/img20.jpg';
+import img19 from '@/public/images/img19.jpg';
+import img21 from '@/public/images/img21.jpg';
+import img22 from '@/public/images/img22.jpg';
 import CardHero from "@/components/CardHero";
 import rama from '@/public/branch-r.svg';
 import PostcardBlockRight from "@/components/PostcardBlockRight";
@@ -31,24 +32,24 @@ export default function Home() {
                                 <Image
                                     priority
                                     className="w-full object-cover h-[70vw] md:h-80vh min-h-auto md:min-h-[600px]"
-                                    src={img9}
+                                    src={img19}
                                     alt="Hero 1" />
                             </div>
                             <div className="hero-gallery-item w-full overflow-hidden relative">
                                 <Image
                                     priority
                                     className="w-full object-cover h-[70vw] md:h-80vh min-h-auto md:min-h-[600px]"
-                                    src={img10}
+                                    src={img20}
                                     alt="Hero 3" />
                             </div>
                             <div className="hero-gallery-item w-full overflow-hidden relative">
                                 <Image
                                     priority
                                     className="w-full object-cover h-[70vw] md:h-80vh min-h-auto md:min-h-[600px]"
-                                    src={img5}
+                                    src={img22}
                                     alt="Hero 2" />
                             </div>
-                            
+
                         </div>
                         <CardHero />
                     </div>
@@ -88,7 +89,7 @@ export default function Home() {
                             <div className="w-full z-10 bg-amber-100 relative overflow-hidden">
                                 <Image
                                     className="image"
-                                    src={img4}
+                                    src={img20}
                                     alt=""
                                     width={805}
                                     height={0}
@@ -121,7 +122,7 @@ export default function Home() {
                         </h2>
                         <br></br>
                         <h2>{t('sections.locations1')}</h2>
-                        <MapTabs/>
+                        <MapTabs />
                     </div>
                 </div>
             </section>
@@ -167,13 +168,49 @@ export default function Home() {
             <section id="guestFormFormik" className="container flex-col justify-center items-center flex pb-[76px] px-5">
                 <div className="content-section flex flex-col items-center justify-start gap-8">
                     <SectionsContent image={rama}
-                                     subtitle={t('sections.subtitle')}
-                                     title={t('sections.title')}
-                                     description={t('sections.descriptionForm')}
+                        subtitle={t('sections.subtitle')}
+                        title={t('sections.title')}
+                        description={t('sections.descriptionForm')}
                     />
 
                     <div className="guest-form-content w-full flex-col items-center flex relative mb-10">
-                        <GuestFormFormikEs/>
+                        <GuestFormFormikEs />
+                    </div>
+                </div>
+            </section>
+
+            {/* Gift/Bank Account Section */}
+            <section id="gifts" className="container flex-col justify-center items-center flex pb-[76px] px-5 bg-[#f9f9f7]">
+                <div className="container-wide w-full max-w-[1200px] flex-col items-center flex">
+                    <div className="gift-content w-full text-center flex-col items-center flex relative">
+                        <Image
+                            src={rama}
+                            width={80}
+                            alt="Rama"
+                            className="h-auto object-contain mb-[14px]"
+                        />
+                        <div className="text-content flex flex-col gap-6 max-w-3xl">
+                            <p className="text-base md:text-lg text-gray-700 italic px-4">
+                                {t('sections.gifts.message')}
+                            </p>
+
+                            {/* Bank Account Card */}
+                            <div className="mt-6 p-6 md:p-8 bg-white border-2 border-[#A0A48E] rounded-xl shadow-lg mx-4">
+                                <p className="font-semibold text-gray-800 mb-3 text-sm md:text-base">
+                                    {t('sections.gifts.accountLabel')}
+                                </p>
+                                <p className="font-mono text-lg md:text-xl text-[#545748] tracking-wide break-all">
+                                    {process.env.NEXT_PUBLIC_GIFT_BANK_ACCOUNT || 'ES00 0000 0000 0000 0000 0000'}
+                                </p>
+                                <p className="mt-3 text-sm text-gray-600">
+                                    {t('sections.gifts.accountName')}
+                                </p>
+                            </div>
+
+                            <p className="text-sm text-gray-600 mt-4 px-4">
+                                {t('sections.gifts.thankYou')}
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>

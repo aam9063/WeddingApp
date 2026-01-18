@@ -27,6 +27,7 @@ interface Values {
     allergies: string;
     allergyDetails: string;
     menuChoice: string;
+    songRequest: string; // ⬅️ NUEVO
     comments: string;
 }
 
@@ -55,6 +56,7 @@ const GuestFormFormikEs: React.FC = () => {
         allergies: '',
         allergyDetails: '',
         menuChoice: '',
+        songRequest: '',
         comments: '',
     };
 
@@ -95,6 +97,10 @@ const GuestFormFormikEs: React.FC = () => {
             is: 'true',
             then: () => Yup.string().required('This field is required'),
         }),
+        songRequest: Yup.string().when('assistance', {
+            is: 'true',
+            then: () => Yup.string().notRequired(), // opcional
+        }),
         comments: Yup.string().notRequired()
     });
 
@@ -129,6 +135,7 @@ const GuestFormFormikEs: React.FC = () => {
                     allergies: values.allergies === 'yes' ? true : values.allergies === 'no' ? false : undefined,
                     allergyDetails: values.allergyDetails || undefined,
                     menuChoice: values.menuChoice || undefined,
+                    songRequest: values.songRequest || undefined,
                     comments: values.comments || undefined
                 });
                 console.log('Guest created successfully with ID:', docId);
@@ -566,6 +573,25 @@ const GuestFormFormikEs: React.FC = () => {
                                                 {errors.menuChoice && touched.menuChoice ?
                                                     <div className="text-red-500">{errors.menuChoice}</div> : null}
                                             </div>
+                                        </div>
+                                    </div>
+
+                                    {/*Song Request Section*/}
+                                    <div className="form-section p-4 border border-accent rounded-xl">
+                                        <h5 className="form-section-title font-semibold mb-4">
+                                            {t('form.SongSection.title')}
+                                        </h5>
+                                        <div className="flex flex-col gap-4">
+                                            <InputField
+                                                label={t('form.SongSection.songInput.label')}
+                                                type="text"
+                                                id="songRequest"
+                                                name="songRequest"
+                                                placeholder={t('form.SongSection.songInput.placeholder')}
+                                            >
+                                                {errors.songRequest && touched.songRequest ?
+                                                    <div className="text-red-500">{errors.songRequest}</div> : null}
+                                            </InputField>
                                         </div>
                                     </div>
 

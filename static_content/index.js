@@ -105,11 +105,6 @@ export const galleryImages = [
         title: "Image 16",
     },
     {
-        id: "17",
-        url: "/images/gallery/img17.jpg",
-        title: "Image 17",
-    },
-    {
         id: "18",
         url: "/images/gallery/img18.jpg",
         title: "Image 18",
@@ -128,5 +123,15 @@ export const galleryImages = [
         id: "21",
         url: "/images/gallery/img21.jpg",
         title: "Image 21",
+    },
+    {
+        id: "22",
+        url: "/images/gallery/img22.jpg",
+        title: "Image 22",
+    },
+    {
+        id: "23",
+        url: "/images/gallery/img23.jpg",
+        title: "Image 23",
     },
 ];

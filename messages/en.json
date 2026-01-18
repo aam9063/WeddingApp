@@ -2,6 +2,20 @@
     "IndexPage": {
         "title": "Wedding App - Home Page",
         "description": "¡Bienvenidos al ejemplo de Next.js Internationalization (i18n)! Esta demo muestra la potencia del App Router y cómo gestionar contenido multilingüe sin problemas utilizando next-intl",
+        "events": {
+            "wedding": {
+                "title": "Religious Ceremony",
+                "time": "5:30 PM - May 2, 2026",
+                "location": "Santa Faz Monastery",
+                "address": "Calle Santa Faz, s/n, 03559 Alicante"
+            },
+            "party": {
+                "title": "Banquet and Celebration",
+                "time": "8:00 PM - May 2, 2026",
+                "location": "Torre de Reixes Farm",
+                "address": "Xixona Road, Alicante"
+            }
+        },
         "sections": {
             "WeddingEvent": "Wedding Event",
             "PartyEvent": "Party Event",
@@ -27,7 +41,13 @@
             "Locations": "Locations",
             "RSVP": "RSVP",
             "Wedding": "Wedding Event",
-            "Party": "Party Event"
+            "Party": "Party Event",
+            "gifts": {
+                "message": "Your presence is the best gift, but if you still want to help us:",
+                "accountLabel": "Bank account number:",
+                "accountName": "Patricia Plaza and Albert Alarcón",
+                "thankYou": "Thank you so much! 💕"
+            }
         },
         "form": {
             "warning": "We hope to see you at our wedding. You will receive an email with the wedding details, please check the",

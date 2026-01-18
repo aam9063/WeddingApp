@@ -32,30 +32,30 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
     const end = new Date(endTime).toISOString().replace(/-|:|\.\d+/g, '').slice(0, 15) + 'Z';
 
     const getGoogleCalendarUrl = (lang: 'es' | 'en') => {
-        const titleText = lang === 'es' ? title : "Patri & Albert Wedding, 2nd May 2026";
+        const titleText = lang === 'es' ? title : "Patricia & Albert Wedding, 2nd May 2026";
         const detailsText = lang === 'es' ?
-            `${description}\n\nContactos:\nAlbert: ${contacts.albert}\nPatricia: ${contacts.patricia}` :
-            `Patri & Albert Wedding, 2nd May 2026\n\nContacts:\nAlbert: ${contacts.albert}\nPatricia: ${contacts.patricia}`;
+            `${description}\n\nContactos:\nPatricia: ${contacts.patricia}\nAlbert: ${contacts.albert}` :
+            `Patricia & Albert Wedding, 2nd May 2026\n\nContacts:\nAlbert: ${contacts.albert}\nPatricia: ${contacts.patricia}`;
         const locationText = lang === 'es' ? locationCeremonia : "Santa Faz Monastery at 05:30 PM, Alicante";
 
         return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(titleText)}&dates=${start}/${end}&details=${encodeURIComponent(detailsText)}&location=${encodeURIComponent(locationText)}`;
     };
 
     const getOutlookCalendarUrl = (lang: 'es' | 'en') => {
-        const titleText = lang === 'es' ? title : "Patri & Albert Wedding, 2nd May 2026";
+        const titleText = lang === 'es' ? title : "Patricia & Albert Wedding, 2nd May 2026";
         const detailsText = lang === 'es' ?
             `${description}\n\nContactos:\nPatricia: ${contacts.patricia}\nAlbert: ${contacts.albert}` :
-            `Patri & Albert Wedding, 02th May 2026\n\nContacts:\nPatricia: ${contacts.patricia}\nAlbert: ${contacts.albert}`;
+            `Patricia & Albert Wedding, 02th May 2026\n\nContacts:\nPatricia: ${contacts.patricia}\nAlbert: ${contacts.albert}`;
         const locationText = lang === 'es' ? locationCeremonia : "Santa Faz Monastery at 05:30 PM, Alicante";
 
         return `https://outlook.live.com/calendar/0/deeplink/compose?subject=${encodeURIComponent(titleText)}&body=${encodeURIComponent(detailsText)}&startdt=${startTime}&enddt=${endTime}&location=${encodeURIComponent(locationText)}`;
     };
 
     const getIcsContent = (lang: 'es' | 'en') => {
-        const titleText = lang === 'es' ? title : "Patri & Albert Wedding, 2nd May 2026";
+        const titleText = lang === 'es' ? title : "Patricia & Albert Wedding, 2nd May 2026";
         const detailsText = lang === 'es' ?
             `${description}\n\nContactos:\nPatricia: ${contacts.patricia}\nAlbert: ${contacts.albert}` :
-            `Patri & Albert Wedding, 02th May 2026\n\nContacts:\nPatricia: ${contacts.patricia}\nAlbert: ${contacts.albert}`;
+            `Patricia & Albert Wedding, 02th May 2026\n\nContacts:\nPatricia: ${contacts.patricia}\nAlbert: ${contacts.albert}`;
         const locationText = lang === 'es' ? locationCeremonia : "Santa Faz Monastery at 05:30 PM, Alicante";
         return `BEGIN:VCALENDAR
 VERSION:2.0
@@ -114,7 +114,7 @@ END:VCALENDAR`;
                 </p>
                 <h2 className="text-xl font-semibold mb-4">Event Details</h2>
                 <p className="mb-4">
-                    <strong>Patri & Albert Wedding, 02th May 2026</strong>
+                    <strong>Patricia & Albert Wedding, 02th May 2026</strong>
                     <br />
                     <strong>Ceremony Location:</strong> {event.locationCeremoniaEN}
                     <br />
@@ -124,9 +124,9 @@ END:VCALENDAR`;
                     For any questions, you can contact us at these phone numbers:
                 </p>
                 <p className="mb-4">
-                    <strong>Contact Patri:</strong> {}
+                    <strong>Contact Patricia: {contacts.patricia}</strong> {}
                     <br />
-                    <strong>Contact Albert:</strong> {}
+                    <strong>Contact Albert: {contacts.albert}</strong> {}
                 </p>
                 
             </div>
