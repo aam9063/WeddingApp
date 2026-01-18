@@ -94,6 +94,14 @@
                     "placeholder": "Enter your allergies separated by commas"
                 }
             },
+            "MenuSection": {
+                "title": "Menu Choice",
+                "menuChoiceRadioButton": {
+                    "label": "Do you prefer meat or fish?",
+                    "meat": "Meat 🥩",
+                    "fish": "Fish 🐟"
+                }
+            },
             "CommentsSection": {
                 "title": "Any Comments?",
                 "commentsInput": {

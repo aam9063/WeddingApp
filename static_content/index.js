@@ -42,16 +42,6 @@ export const galleryImages = [
         title: "Image 2",
     },
     {
-        id: "3",
-        url: "/images/gallery/img3.jpg",
-        title: "Image 3",
-    },
-    {
-        id: "4",
-        url: "/images/gallery/img4.jpg",
-        title: "Image 4",
-    },
-    {
         id: "13",
         url: "/images/gallery/img13.jpg",
         title: "Image 13",
@@ -123,5 +113,20 @@ export const galleryImages = [
         id: "18",
         url: "/images/gallery/img18.jpg",
         title: "Image 18",
+    },
+    {
+        id: "19",
+        url: "/images/gallery/img19.jpg",
+        title: "Image 19",
+    },
+    {
+        id: "20",
+        url: "/images/gallery/img20.jpg",
+        title: "Image 20",
+    },
+    {
+        id: "21",
+        url: "/images/gallery/img21.jpg",
+        title: "Image 21",
     },
 ];

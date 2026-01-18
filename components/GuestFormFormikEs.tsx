@@ -26,6 +26,7 @@ interface Values {
     bus: string;
     allergies: string;
     allergyDetails: string;
+    menuChoice: string;
     comments: string;
 }
 
@@ -53,6 +54,7 @@ const GuestFormFormikEs: React.FC = () => {
         bus: '',
         allergies: '',
         allergyDetails: '',
+        menuChoice: '',
         comments: '',
     };
 
@@ -89,6 +91,10 @@ const GuestFormFormikEs: React.FC = () => {
             is: 'yes',
             then: () => Yup.string().required('This field is required'),
         }),
+        menuChoice: Yup.string().when('assistance', {  // ⬅️ NUEVO
+            is: 'true',
+            then: () => Yup.string().required('This field is required'),
+        }),
         comments: Yup.string().notRequired()
     });
 
@@ -115,7 +121,15 @@ const GuestFormFormikEs: React.FC = () => {
                     email: values.email,
                     token: values.token,
                     assistance: values.assistance === 'true',
-                    accompanist: values.accompanist === 'yes'
+                    accompanist: values.accompanist === 'yes',
+                    accompanistName: values.accompanistName || undefined,
+                    children: values.children === 'yes' ? true : values.children === 'no' ? false : undefined,
+                    childrenNames: values.childrenNames || undefined,
+                    bus: values.bus === 'yes' ? true : values.bus === 'no' ? false : undefined,
+                    allergies: values.allergies === 'yes' ? true : values.allergies === 'no' ? false : undefined,
+                    allergyDetails: values.allergyDetails || undefined,
+                    menuChoice: values.menuChoice || undefined,
+                    comments: values.comments || undefined
                 });
                 console.log('Guest created successfully with ID:', docId);
 
@@ -503,6 +517,58 @@ const GuestFormFormikEs: React.FC = () => {
                                         </div>
                                     </div>
 
+                                    {/*Menu Choice Section*/}
+                                    <div className="form-section p-4 border border-accent rounded-xl">
+                                        <h5 className="form-section-title font-semibold mb-4">
+                                            {t('form.MenuSection.title')}
+                                        </h5>
+                                        <div className="flex flex-col gap-4">
+                                            <div className="w-full flex flex-col">
+                                                <label htmlFor="menuChoice"
+                                                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                                                    {t('form.MenuSection.menuChoiceRadioButton.label')}
+                                                </label>
+                                                <div className="flex items-center space-x-4">
+                                                    <label className="flex items-center">
+                                                        <Field type="radio" name="menuChoice" value="meat"
+                                                            className="hidden" />
+                                                        <div
+                                                            className={`w-6 h-6 rounded-full border-2 border-gray-300 flex items-center justify-center mr-2 ${values.menuChoice === 'meat' ? 'bg-accent border-blue-500' : ''}`}>
+                                                            {values.menuChoice === 'meat' && (
+                                                                <svg className="w-4 h-4 text-white" fill="none"
+                                                                    viewBox="0 0 24 24" stroke="currentColor">
+                                                                    <path strokeLinecap="round" strokeLinejoin="round"
+                                                                        strokeWidth={2} d="M5 13l4 4L19 7" />
+                                                                </svg>
+                                                            )}
+                                                        </div>
+                                                        <span className="text-sm">
+                                                            {t('form.MenuSection.menuChoiceRadioButton.meat')}
+                                                        </span>
+                                                    </label>
+                                                    <label className="flex items-center">
+                                                        <Field type="radio" name="menuChoice" value="fish" className="hidden" />
+                                                        <div
+                                                            className={`w-6 h-6 rounded-full border-2 border-gray-300 flex items-center justify-center mr-2 ${values.menuChoice === 'fish' ? 'bg-accent border-blue-500' : ''}`}>
+                                                            {values.menuChoice === 'fish' && (
+                                                                <svg className="w-4 h-4 text-white" fill="none"
+                                                                    viewBox="0 0 24 24" stroke="currentColor">
+                                                                    <path strokeLinecap="round" strokeLinejoin="round"
+                                                                        strokeWidth={2} d="M5 13l4 4L19 7" />
+                                                                </svg>
+                                                            )}
+                                                        </div>
+                                                        <span className="text-sm">
+                                                            {t('form.MenuSection.menuChoiceRadioButton.fish')}
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                {errors.menuChoice && touched.menuChoice ?
+                                                    <div className="text-red-500">{errors.menuChoice}</div> : null}
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <div className="form-section p-4 border border-accent rounded-xl">
                                         <h5 className="form-section-title font-semibold mb-4">
                                             {t('form.CommentsSection.title')}
@@ -511,11 +577,11 @@ const GuestFormFormikEs: React.FC = () => {
                                             <div className="w-full flex flex-col gap-2">
                                                 <InputField
                                                     label={t('form.CommentsSection.commentsInput.label')}
-                                                    type="textarea" 
+                                                    type="textarea"
                                                     id="comments"
                                                     name="comments"
                                                     placeholder={t('form.CommentsSection.commentsInput.placeholder')}
-                                                    rows={3} 
+                                                    rows={3}
                                                 >
                                                     {errors.comments && touched.comments ? (
                                                         <div className="text-sm text-red-500">{errors.comments}</div>
