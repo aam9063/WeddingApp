@@ -11,13 +11,15 @@ interface Guest {
     assistance: boolean;
     accompanist: boolean;
     accompanistName?: string;
+    accompanistMenuChoice?: string; // ⬅️ NUEVO
     children?: boolean;
     childrenNames?: string;
+    childrenMenu?: string; // ⬅️ NUEVO
     bus?: boolean;
     allergies?: boolean;
     allergyDetails?: string;
     menuChoice?: string;
-    songRequest?: string; // ⬅️ NUEVO
+    songRequest?: string;
     comments?: string;
     createdAt?: string;
 }

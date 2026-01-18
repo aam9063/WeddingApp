@@ -80,26 +80,28 @@
                     "yes": "Yes",
                     "no": "No"
                 },
-                "guestsInput": {
-                    "label": "Number of Guests",
-                    "placeholder": "Enter the number of guests"
-                },
                 "guestsNamesInput": {
                     "label": "Accompanying person's name",
                     "placeholder": "Enter the name of your accompanying person"
+                },
+                "accompanistMenuChoice": {
+                    "label": "What does your guest prefer?",
+                    "meat": "Meat 🥩",
+                    "fish": "Fish 🐟"
                 },
                 "guestsChildrenRadioButton": {
                     "label": "Will you bring children?",
                     "yes": "Yes",
                     "no": "No"
                 },
-                "guestsChildrenInput": {
-                    "label": "Number of Children",
-                    "placeholder": "Enter the number of children"
-                },
                 "guestsChildrenNamesInput": {
                     "label": "Children Names",
                     "placeholder": "Enter the names of your children"
+                },
+                "childrenMenu": {
+                    "label": "Do they want children's menu?",
+                    "yes": "Yes",
+                    "no": "No (adult menu)"
                 }
             },
             "AllergiesSection": {

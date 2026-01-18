@@ -121,7 +121,6 @@ export default function Home() {
                             {t('sections.locationsText')}
                         </h2>
                         <br></br>
-                        <h2>{t('sections.locations1')}</h2>
                         <MapTabs />
                     </div>
                 </div>

@@ -76,26 +76,28 @@
           "yes": "Sí",
           "no": "No"
         },
-        "guestsInput": {
-          "label": "Número de Invitados",
-          "placeholder": "Ingresa el número de invitados"
-        },
         "guestsNamesInput": {
           "label": "Nombre del Acompañante",
           "placeholder": "Ingresa el nombre de tu acompañante"
+        },
+        "accompanistMenuChoice": {
+          "label": "¿Qué prefiere tu acompañante?",
+          "meat": "Carne 🥩",
+          "fish": "Pescado 🐟"
         },
         "guestsChildrenRadioButton": {
           "label": "¿Traerás niños?",
           "yes": "Sí",
           "no": "No"
         },
-        "guestsChildrenInput": {
-          "label": "Número de Niños",
-          "placeholder": "Ingresa el número de niños"
-        },
         "guestsChildrenNamesInput": {
           "label": "Nombres de los Niños",
           "placeholder": "Ingresa los nombres de tus niños"
+        },
+        "childrenMenu": {
+          "label": "¿Quieren menú infantil?",
+          "yes": "Sí",
+          "no": "No (menú de adultos)"
         }
       },
       "AllergiesSection": {
@@ -180,5 +182,5 @@
     "title": "Sobre Nosotros",
     "sectionTitle": "Sobre Nosotros",
     "description": "Todo comenzó una tarde de verano en junio, cuando decidimos vernos para contemplar el atardecer en la playa. Ese momento mágico fue el inicio de una historia que nos llevaría a descubrir el amor, la complicidad y la aventura.\n\nJuntos recorrimos Madrid, Amsterdam, Edimburgo, Cabo de Gata y Mallorca, cada viaje fortaleciendo los lazos que nos unían. Pero la mayor aventura estaba por llegar: nuestro hijo Javier, la luz de nuestras vidas y la razón más hermosa para celebrar este día.\n\nHoy, rodeados de quienes más queremos, damos el siguiente paso en nuestra historia. Gracias por acompañarnos en este momento tan especial."
-}
+  }
 }
