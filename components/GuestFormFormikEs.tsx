@@ -71,43 +71,43 @@ const GuestFormFormikEs: React.FC = () => {
         assistance: Yup.string().required('Required'),
         accompanist: Yup.string().when('assistance', {
             is: 'true',
-            then: () => Yup.string().required('This field is required'),
+            then: () => Yup.string().required('Este campo es obligatorio'),
         }),
         accompanistName: Yup.string().when('accompanist', {
             is: 'yes',
-            then: () => Yup.string().required('This field is required'),
+            then: () => Yup.string().required('Este campo es obligatorio'),
         }),
         accompanistMenuChoice: Yup.string().when('accompanist', {
             is: 'yes',
-            then: () => Yup.string().required('This field is required'),
+            then: () => Yup.string().required('Este campo es obligatorio'),
         }),
         children: Yup.string().when('accompanist', {
             is: 'yes',
-            then: () => Yup.string().required('This field is required'),
+            then: () => Yup.string().required('Este campo es obligatorio'),
         }),
         childrenNames: Yup.string().when('children', {
             is: 'yes',
-            then: () => Yup.string().required('This field is required'),
+            then: () => Yup.string().required('Este campo es obligatorio'),
         }),
         childrenMenu: Yup.string().when('children', {
             is: 'yes',
-            then: () => Yup.string().required('This field is required'),
+            then: () => Yup.string().required('Este campo es obligatorio'),
         }),
         bus: Yup.string().when('assistance', {
             is: 'true',
-            then: () => Yup.string().required('This field is required'),
+            then: () => Yup.string().required('Este campo es obligatorio'),
         }),
         allergies: Yup.string().when('assistance', {
             is: 'true',
-            then: () => Yup.string().required('This field is required'),
+            then: () => Yup.string().required('Este campo es obligatorio'),
         }),
         allergyDetails: Yup.string().when('allergies', {
             is: 'yes',
-            then: () => Yup.string().required('This field is required'),
+            then: () => Yup.string().required('Este campo es obligatorio'),
         }),
         menuChoice: Yup.string().when('assistance', {
             is: 'true',
-            then: () => Yup.string().required('This field is required'),
+            then: () => Yup.string().required('Este campo es obligatorio'),
         }),
         songRequest: Yup.string().when('assistance', {
             is: 'true',

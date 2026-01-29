@@ -17,6 +17,7 @@ import GuestFormFormikEs from "@/components/GuestFormFormikEs";
 import React from "react";
 import SectionsContent from "@/components/SectionsContent";
 import TestingTranslations from "@/components/TestingTranslations";
+import Countdown from "@/components/Countdown";
 
 export default function Home() {
     const t = useTranslations('IndexPage');
@@ -53,6 +54,12 @@ export default function Home() {
                         </div>
                         <CardHero />
                     </div>
+                </div>
+            </section>
+
+            <section id="countdown" className="container flex flex-col justify-center items-center py-20 px-5">
+                <div className="container-wide w-full max-w-[1200px] flex flex-col items-center">
+                    <Countdown />
                 </div>
             </section>
 

@@ -16,6 +16,14 @@
                 "address": "Xixona Road, Alicante"
             }
         },
+        "countdown": {
+            "title": "Days",
+            "days": "Days",
+            "hours": "Hours",
+            "minutes": "Minutes",
+            "seconds": "Seconds",
+            "subtitle": "We can't wait to celebrate it with you!"
+        },
         "sections": {
             "WeddingEvent": "Wedding Event",
             "PartyEvent": "Party Event",
@@ -43,7 +51,7 @@
             "Wedding": "Wedding Event",
             "Party": "Party Event",
             "gifts": {
-                "message": "Your presence is the best gift, but if you still want to help us:",
+                "message": "Your presence will already be a gift, but if you want to make it even more unforgettable:",
                 "accountLabel": "Bank account number:",
                 "accountName": "Patricia Plaza and Albert Alarcón",
                 "thankYou": "Thank you so much! 💕"
@@ -99,20 +107,20 @@
                     "placeholder": "Enter the names of your children"
                 },
                 "childrenMenu": {
-                    "label": "Do they want children's menu?",
+                    "label": "Do they want children's menu? (Until 14 years old)",
                     "yes": "Yes",
-                    "no": "No (adult menu)"
+                    "no": "No"
                 }
             },
             "AllergiesSection": {
                 "title": "Allergies",
                 "allergyRadioButton": {
-                    "label": "Do you have any allergies?",
+                    "label": "Do you have any allergies or food intolerances?",
                     "yes": "Yes",
                     "no": "No"
                 },
                 "allergiesInput": {
-                    "label": "Provide a list of Allergies",
+                    "label": "Provide a list of Allergies or Food Intolerances",
                     "placeholder": "Enter your allergies separated by commas"
                 }
             },

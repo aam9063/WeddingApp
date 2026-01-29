@@ -7,14 +7,22 @@
         "title": "Ceremonia Religiosa",
         "time": "17:30h - 2 de Mayo de 2026",
         "location": "Monasterio de la Santa Faz",
-        "address": "Calle Santa Faz, s/n, 03559 Alicante"
+        "address": "C. Mayor, 2, 03559 Santa Faz, Alicante"
       },
       "party": {
         "title": "Banquete y Celebración",
         "time": "20:00h - 2 de Mayo de 2026",
         "location": "Finca Torre de Reixes",
-        "address": "Carretera de Xixona, Alicante"
+        "address": "Cmo. de Benimagrell, 47, 03559 Alicante"
       }
+    },
+    "countdown": {
+      "title": "Faltan...",
+      "days": "Días",
+      "hours": "Horas",
+      "minutes": "Minutos",
+      "seconds": "Segundos",
+      "subtitle": "¡No podemos esperar para celebrarlo contigo!"
     },
     "sections": {
       "church": "Monasterio de la Santa Faz",
@@ -23,13 +31,12 @@
       "locations": "Localizaciones",
       "locationsText": "¿Dónde ocurrirá la magia?",
       "locationsText1": "Por ello tenemos el placer de invitarles a nuestro enlace matrimonial",
-      "locations1": "Elija el lugar perfecto que capture la esencia de su historia de amor.",
       "grettingText": "Hay días en la vida que son especiales por sí solos. Compartirlos con las personas que quieres los convierte en inolvidables.",
       "gallery": "Nuestra Historia en Imágenes",
       "galleryText": "Cada foto cuenta una parte de nuestra historia, desde los momentos más simples hasta los más extraordinarios. Nos sentimos afortunados de haber compartido tantos recuerdos juntos y estamos emocionados de crear muchos más en el futuro.",
       "subtitle": "Confirma tu asistencia",
       "title": "ESPERAMOS VERTE ALLI",
-      "descriptionForm": "Llena el formulario a continuación para confirmar tu asistencia a la boda.",
+      "descriptionForm": "Rellena el formulario a continuación para confirmar tu asistencia a la boda.",
       "Home": "Inicio",
       "Greeting": "Bienvenida",
       "AboutUs": "Sobre Nosotros",
@@ -39,7 +46,7 @@
       "Wedding": "Boda",
       "Party": "Fiesta",
       "gifts": {
-        "message": "Vuestra presencia es el mejor de los regalos, pero si aún así nos queréis ayudar:",
+        "message": "Vuestra presencia ya será un regalo, pero si queréis hacerlo aún más inolvidable:",
         "accountLabel": "Número de cuenta:",
         "accountName": "Patricia Plaza y Albert Alarcón",
         "thankYou": "¡Muchísimas gracias! 💕"
@@ -95,15 +102,15 @@
           "placeholder": "Ingresa los nombres de tus niños"
         },
         "childrenMenu": {
-          "label": "¿Quieren menú infantil?",
+          "label": "¿Quieren menú infantil? (Hasta 14 años)",
           "yes": "Sí",
-          "no": "No (menú de adultos)"
+          "no": "No"
         }
       },
       "AllergiesSection": {
         "title": "Alergias",
         "allergyRadioButton": {
-          "label": "¿Tienes alguna alergia?",
+          "label": "¿Tienes alguna alergia o intolerancia a algún alimento?",
           "yes": "Sí",
           "no": "No"
         },
