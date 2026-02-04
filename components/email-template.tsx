@@ -80,7 +80,7 @@ END:VCALENDAR`;
 
             {/* Sección en Español */}
             <div className="mb-8">
-                <h1 className="text-2xl font-bold mb-4">¡Bienvenido, {firstName} {lastName}!</h1>
+                <h1 className="text-2xl font-bold mb-4">¡Bienvenido/a, {firstName} {lastName}!</h1>
                 <p className="mb-6">
                     Gracias por confirmar tu asistencia a nuestra boda.
                 </p>
