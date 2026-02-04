@@ -178,7 +178,7 @@ const GuestFormFormikEs: React.FC = () => {
         title: t('form.eventTitle'),
         description: t('form.eventDescription'),
         location: t('form.eventLocation'),
-        startTime: "2026-05-02T17:30:00",
+        startTime: "2026-05-02T17:00:00",
         endTime: "2026-05-02T18:30:00",
         contacts: {
             patri: process.env.NEXT_PUBLIC_PATRI_CONTACT,

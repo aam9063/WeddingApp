@@ -13,7 +13,7 @@ interface TimeLeft {
 
 const Countdown: React.FC = () => {
     const t = useTranslations('IndexPage');
-    const weddingDate = new Date('2026-05-02T17:30:00');
+    const weddingDate = new Date('2026-05-02T17:00:00');
 
     const calculateTimeLeft = (): TimeLeft => {
         const difference = weddingDate.getTime() - new Date().getTime();

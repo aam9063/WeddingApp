@@ -17,7 +17,7 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
         description: "Boda de Patricia y Albert, 2 de Mayo del 2026",
         locationCeremonia: "Monasterio de la Santa Faz, C. Mayor, 2, 03559 Santa Faz, Alicante a las 17.30h, Alicante",
         locationBanquete: "Finca Torre de Reixes, Cmo. de Benimagrell, 47, 03559 Alicante a las 20.00h",
-        startTime: "2026-05-02T17:30:00",
+        startTime: "2026-05-02T17:00:00",
         endTime: "2026-05-02T18:30:00",
         contacts: {
             albert: process.env.NEXT_PUBLIC_ALBERT_CONTACT,

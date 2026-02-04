@@ -13,7 +13,7 @@ const AddToCalendar: FC = () => {
         title: "Boda de Patricia y Albert",
         description: "Boda de Patricia y Albert",
         location: "Monasterio de la Santa Faz, Alicante",
-        startTime: "2026-05-02T17:30:00",
+        startTime: "2026-05-02T17:00:00",
         endTime: "2026-05-02T18:30:00" 
     };
 
